@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Curso de Android</string>
+      <string name="title_temario">Temario</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_registro">Registro</string>
+
+    <!-- Strings Registro -->
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="correo">Correo</string>
+    <string name="semestre">Semestre</string>
+       <string name="laptop">¿Tienes laptop?</string>
+    <string name="boton_registro">Registrarme</string>
+        <string name="boton_cancelar">Cancelar</string>
+<string name="registro_e">¡Registro exitoso!</string>
+<string name="infor_regis">Proximamente se te enviará un correo con la información del curso.</string>
+   <string name="salir">Salir</string>
+   <string name="ver_temario">Ver temario</string>
+
+<!-- Opciones Spinner (Semestres) -->
+    <string-array name="opciones_spinner">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    
+    
+    <!-- Opciones Spinner (laptop) -->
+    <string-array name="opciones_laptop">
+        <item>Sí</item>
+        <item>No</item>
+        
+      </string-array>
+    
+
+    <string name="title_activity_inicio">Curso de Android</string>
+<!-- Inicio -->
+   <string name="boton_temario">Temario</string>
+    <string name="boton_registro_inicio">Registro</string>
+</resources>

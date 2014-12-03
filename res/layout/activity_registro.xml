@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+
+    tools:context="com.csipro.temarioandroid.Registro" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+          android:fillViewport="true" 
+          android:scrollbars="none"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/tv_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text" />
+
+                <EditText
+                    android:id="@+id/et_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_apellido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apellido"
+                    
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text" />
+
+                <EditText
+                    android:id="@+id/et_apellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_correo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/correo"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text" />
+
+                <EditText
+                    android:id="@+id/et_correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_style"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:id="@+id/tv_semestre"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.2"
+                        android:text="@string/semestre"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/text" />
+
+                    <Spinner
+                        android:id="@+id/semestres"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/spinner_dialer"
+                        android:padding="10dp"
+                        android:textColor="@color/text"
+                        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:id="@+id/tv_slaptop"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.2"
+                        android:text="@string/laptop"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/text" />
+
+                    <Spinner
+                        android:id="@+id/laptop"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/spinner_dialer"
+                        android:padding="10dp"
+                        android:textColor="@color/text"
+                        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_alignParentBottom="true"
+                    android:background="@color/fondo"
+                    android:gravity="center"
+                   
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="20dp"
+                    android:weightSum="2" >
+
+                    <Button
+                        android:id="@+id/bt_cancelar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_dialer"
+                        android:text="@string/boton_cancelar"
+                        android:textColor="@color/fondo"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/bt_registro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_dialer"
+                        android:text="@string/boton_registro"
+                        android:textColor="@color/fondo"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

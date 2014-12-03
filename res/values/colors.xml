@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tema">#00a478</color>
+    <color name="fondo">#ecf0f1</color>
+    <color name="text">#222222</color>
+    <color name="fondo_registro">#48BC9C</color>
+</resources>
